@@ -14,6 +14,10 @@
 		240B6ADF217C388000A578EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240B6ADD217C388000A578EF /* LaunchScreen.storyboard */; };
 		240B6AEA217C388000A578EF /* ModularAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B6AE9217C388000A578EF /* ModularAppTests.swift */; };
 		240B6AF5217C388000A578EF /* ModularAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B6AF4217C388000A578EF /* ModularAppUITests.swift */; };
+		24168BB3217C419A001A83B1 /* Navigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BB0217C4127001A83B1 /* Navigator.framework */; };
+		24168BB4217C419A001A83B1 /* Navigator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BB0217C4127001A83B1 /* Navigator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24168BBC217C429C001A83B1 /* DataModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BBB217C4294001A83B1 /* DataModule.framework */; };
+		24168BBD217C429C001A83B1 /* DataModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BBB217C4294001A83B1 /* DataModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		24168BB5217C419A001A83B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				24168BBD217C429C001A83B1 /* DataModule.framework in Embed Frameworks */,
+				24168BB4217C419A001A83B1 /* Navigator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		240B6AD1217C388000A578EF /* ModularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		240B6AD4217C388000A578EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,8 @@
 		240B6AF0217C388000A578EF /* ModularAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		240B6AF4217C388000A578EF /* ModularAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularAppUITests.swift; sourceTree = "<group>"; };
 		240B6AF6217C388000A578EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24168BB0217C4127001A83B1 /* Navigator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Navigator.framework; path = Carthage/Build/iOS/Navigator.framework; sourceTree = "<group>"; };
+		24168BBB217C4294001A83B1 /* DataModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DataModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24168BBC217C429C001A83B1 /* DataModule.framework in Frameworks */,
+				24168BB3217C419A001A83B1 /* Navigator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +100,7 @@
 		240B6AC8217C388000A578EF = {
 			isa = PBXGroup;
 			children = (
+				24168BAF217C4113001A83B1 /* Dependencies */,
 				240B6AD3217C388000A578EF /* ModularApp */,
 				240B6AE8217C388000A578EF /* ModularAppTests */,
 				240B6AF3217C388000A578EF /* ModularAppUITests */,
@@ -97,8 +121,7 @@
 		240B6AD3217C388000A578EF /* ModularApp */ = {
 			isa = PBXGroup;
 			children = (
-				240B6AD4217C388000A578EF /* AppDelegate.swift */,
-				240B6AD6217C388000A578EF /* ViewController.swift */,
+				24168BBE217C42CE001A83B1 /* Template */,
 				240B6AD8217C388000A578EF /* Main.storyboard */,
 				240B6ADB217C388000A578EF /* Assets.xcassets */,
 				240B6ADD217C388000A578EF /* LaunchScreen.storyboard */,
@@ -125,6 +148,40 @@
 			path = ModularAppUITests;
 			sourceTree = "<group>";
 		};
+		24168BAF217C4113001A83B1 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				24168BB7217C4223001A83B1 /* External */,
+				24168BB6217C4218001A83B1 /* Internal */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		24168BB6217C4218001A83B1 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				24168BBB217C4294001A83B1 /* DataModule.framework */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+		24168BB7217C4223001A83B1 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				24168BB0217C4127001A83B1 /* Navigator.framework */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		24168BBE217C42CE001A83B1 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				240B6AD4217C388000A578EF /* AppDelegate.swift */,
+				240B6AD6217C388000A578EF /* ViewController.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +192,8 @@
 				240B6ACD217C388000A578EF /* Sources */,
 				240B6ACE217C388000A578EF /* Frameworks */,
 				240B6ACF217C388000A578EF /* Resources */,
+				24168BB2217C415D001A83B1 /* ShellScript */,
+				24168BB5217C419A001A83B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +312,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24168BB2217C415D001A83B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Navigator.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		240B6ACD217C388000A578EF /* Sources */ = {
@@ -427,6 +503,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ModularApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.ModularApp;
@@ -441,6 +521,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ModularApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.ModularApp;

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:ModularApp.xcodeproj">
-   </FileRef>
+   <Group
+      location = "container:"
+      name = "AppLayer">
+      <FileRef
+         location = "group:ModularApp.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "StorageLayer">
+      <FileRef
+         location = "group:Modules/DataModule/DataModule.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "FeatureLayer">
+   </Group>
 </Workspace>
