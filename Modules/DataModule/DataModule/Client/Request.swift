@@ -46,14 +46,13 @@ class Request<T: Codable> {
                                               endpoint: endpoint,
                                               parameters: parameters)
         
-        
         guard let url = URL(string: fullUrl) else { return Observable.just(nil) }
-        
+    
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method == .get ? "GET" : "POST"
         request.allHTTPHeaderFields = headers
         
-        debugPrint("request: \(endpoint.method.alamofireMethod) \(request.allowsCellularAccess)")
+        debugPrint("request: \(endpoint.method.alamofireMethod) \(fullUrl)")
         
         return Observable.create({ (observer) -> Disposable in
             

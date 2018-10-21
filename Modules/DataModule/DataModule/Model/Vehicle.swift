@@ -8,14 +8,6 @@
 
 import Foundation
 
-/*
- "id": "4e09b023-f650-4747-9ab9-eacf14540cfb",
- "name": "Air Destroyer Goliath",
- "description": "A military airship utilized by the government to access Laputa",
- "vehicle_class": "Airship",
- "length": "1,000",
- */
-
 public struct Vehicle {
     
     public let id: String?

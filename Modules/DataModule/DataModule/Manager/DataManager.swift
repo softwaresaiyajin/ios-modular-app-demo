@@ -15,9 +15,7 @@ public class DataManager {
     
     public static let shared = DataManager()
     
-    private init() {
-        
-    }
+    private init() { }
     
     public func startSession(rootUrl: String) {
         self.rootUrl = rootUrl

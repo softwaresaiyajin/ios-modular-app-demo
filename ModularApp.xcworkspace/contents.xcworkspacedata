@@ -18,5 +18,11 @@
    <Group
       location = "container:"
       name = "FeatureLayer">
+      <FileRef
+         location = "group:Modules/EntityDetailModule/EntityDetailModule.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Modules/EntityListModule/EntityListModule.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>

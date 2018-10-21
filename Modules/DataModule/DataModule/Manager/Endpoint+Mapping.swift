@@ -86,7 +86,7 @@ public struct EndpointMap {
     public static let vehicleDetail = addEndpoint(
         url: "/vehicles/\(ParameterKey.vehicleId)",
         method: .get,
-        mapper: VehicleListMapper.self
+        mapper: VehicleDetailMapper.self
         ).addPathParameterKeys(ParameterKey.vehicleId)
 }
 
