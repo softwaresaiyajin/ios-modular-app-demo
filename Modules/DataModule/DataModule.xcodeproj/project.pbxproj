@@ -10,6 +10,22 @@
 		240B6B16217C3C4A00A578EF /* DataModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B6B0C217C3C4A00A578EF /* DataModule.framework */; };
 		240B6B1B217C3C4A00A578EF /* DataModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B6B1A217C3C4A00A578EF /* DataModuleTests.swift */; };
 		240B6B1D217C3C4A00A578EF /* DataModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 240B6B0F217C3C4A00A578EF /* DataModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24168BC5217C48BB001A83B1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24168BC4217C48BB001A83B1 /* Endpoint.swift */; };
+		24168BC7217C4C62001A83B1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24168BC6217C4C62001A83B1 /* DataManager.swift */; };
+		24168BC9217C4CCC001A83B1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24168BC8217C4CCC001A83B1 /* Request.swift */; };
+		24289174217C55C700957868 /* Endpoint+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24289173217C55C700957868 /* Endpoint+Mapping.swift */; };
+		24289176217C564D00957868 /* ListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24289175217C564D00957868 /* ListMapper.swift */; };
+		24289178217C569100957868 /* DetailMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24289177217C569100957868 /* DetailMapper.swift */; };
+		2428917A217C583600957868 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24289179217C583600957868 /* Film.swift */; };
+		242891BA217C5C6E00957868 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242891B6217C5C6D00957868 /* Alamofire.framework */; };
+		242891BB217C5C6E00957868 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242891B7217C5C6D00957868 /* RxAlamofire.framework */; };
+		242891BC217C5C6E00957868 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242891B8217C5C6E00957868 /* RxSwift.framework */; };
+		242891BD217C5C6E00957868 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242891B9217C5C6E00957868 /* RxCocoa.framework */; };
+		242891D8217C5DFD00957868 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242891D7217C5DFD00957868 /* UrlHelper.swift */; };
+		2440367A217C928200E3ACAF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24403679217C928200E3ACAF /* Person.swift */; };
+		24403680217C94EC00E3ACAF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2440367F217C94EC00E3ACAF /* Location.swift */; };
+		24403682217C963400E3ACAF /* Specie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24403681217C963400E3ACAF /* Specie.swift */; };
+		24403684217C96FB00E3ACAF /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24403683217C96FB00E3ACAF /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,22 @@
 		240B6B15217C3C4A00A578EF /* DataModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		240B6B1A217C3C4A00A578EF /* DataModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModuleTests.swift; sourceTree = "<group>"; };
 		240B6B1C217C3C4A00A578EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24168BC4217C48BB001A83B1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		24168BC6217C4C62001A83B1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		24168BC8217C4CCC001A83B1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		24289173217C55C700957868 /* Endpoint+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Mapping.swift"; sourceTree = "<group>"; };
+		24289175217C564D00957868 /* ListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMapper.swift; sourceTree = "<group>"; };
+		24289177217C569100957868 /* DetailMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapper.swift; sourceTree = "<group>"; };
+		24289179217C583600957868 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		242891B6217C5C6D00957868 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		242891B7217C5C6D00957868 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = ../../Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		242891B8217C5C6E00957868 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		242891B9217C5C6E00957868 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		242891D7217C5DFD00957868 /* UrlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
+		24403679217C928200E3ACAF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2440367F217C94EC00E3ACAF /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		24403681217C963400E3ACAF /* Specie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specie.swift; sourceTree = "<group>"; };
+		24403683217C96FB00E3ACAF /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242891BD217C5C6E00957868 /* RxCocoa.framework in Frameworks */,
+				242891BA217C5C6E00957868 /* Alamofire.framework in Frameworks */,
+				242891BB217C5C6E00957868 /* RxAlamofire.framework in Frameworks */,
+				242891BC217C5C6E00957868 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +89,7 @@
 		240B6B02217C3C4A00A578EF = {
 			isa = PBXGroup;
 			children = (
+				2428917B217C5B3B00957868 /* Dependencies */,
 				240B6B0E217C3C4A00A578EF /* DataModule */,
 				240B6B19217C3C4A00A578EF /* DataModuleTests */,
 				240B6B0D217C3C4A00A578EF /* Products */,
@@ -71,6 +108,11 @@
 		240B6B0E217C3C4A00A578EF /* DataModule */ = {
 			isa = PBXGroup;
 			children = (
+				242891D6217C5DDF00957868 /* UrlHelper */,
+				24168BC2217C4475001A83B1 /* Client */,
+				24168BC1217C43DC001A83B1 /* Model */,
+				24168BC0217C43D5001A83B1 /* Mapper */,
+				24168BBF217C43D0001A83B1 /* Manager */,
 				240B6B0F217C3C4A00A578EF /* DataModule.h */,
 				240B6B10217C3C4A00A578EF /* Info.plist */,
 			);
@@ -84,6 +126,64 @@
 				240B6B1C217C3C4A00A578EF /* Info.plist */,
 			);
 			path = DataModuleTests;
+			sourceTree = "<group>";
+		};
+		24168BBF217C43D0001A83B1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				24168BC6217C4C62001A83B1 /* DataManager.swift */,
+				24289173217C55C700957868 /* Endpoint+Mapping.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		24168BC0217C43D5001A83B1 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				24289175217C564D00957868 /* ListMapper.swift */,
+				24289177217C569100957868 /* DetailMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		24168BC1217C43DC001A83B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24289179217C583600957868 /* Film.swift */,
+				24403679217C928200E3ACAF /* Person.swift */,
+				2440367F217C94EC00E3ACAF /* Location.swift */,
+				24403681217C963400E3ACAF /* Specie.swift */,
+				24403683217C96FB00E3ACAF /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24168BC2217C4475001A83B1 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				24168BC4217C48BB001A83B1 /* Endpoint.swift */,
+				24168BC8217C4CCC001A83B1 /* Request.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2428917B217C5B3B00957868 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				242891B6217C5C6D00957868 /* Alamofire.framework */,
+				242891B7217C5C6D00957868 /* RxAlamofire.framework */,
+				242891B9217C5C6E00957868 /* RxCocoa.framework */,
+				242891B8217C5C6E00957868 /* RxSwift.framework */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		242891D6217C5DDF00957868 /* UrlHelper */ = {
+			isa = PBXGroup;
+			children = (
+				242891D7217C5DFD00957868 /* UrlHelper.swift */,
+			);
+			path = UrlHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +248,7 @@
 				TargetAttributes = {
 					240B6B0B217C3C4A00A578EF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					240B6B14217C3C4A00A578EF = {
@@ -196,6 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24168BC5217C48BB001A83B1 /* Endpoint.swift in Sources */,
+				24403682217C963400E3ACAF /* Specie.swift in Sources */,
+				24403684217C96FB00E3ACAF /* Vehicle.swift in Sources */,
+				24289174217C55C700957868 /* Endpoint+Mapping.swift in Sources */,
+				24289176217C564D00957868 /* ListMapper.swift in Sources */,
+				24289178217C569100957868 /* DetailMapper.swift in Sources */,
+				24168BC9217C4CCC001A83B1 /* Request.swift in Sources */,
+				242891D8217C5DFD00957868 /* UrlHelper.swift in Sources */,
+				2440367A217C928200E3ACAF /* Person.swift in Sources */,
+				24168BC7217C4C62001A83B1 /* DataManager.swift in Sources */,
+				24403680217C94EC00E3ACAF /* Location.swift in Sources */,
+				2428917A217C583600957868 /* Film.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,18 +447,21 @@
 		240B6B21217C3C4A00A578EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../Carthage/Build/iOS";
 				INFOPLIST_FILE = DataModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.DataModule;
+				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.data;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,16 +470,18 @@
 		240B6B22217C3C4A00A578EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../Carthage/Build/iOS";
 				INFOPLIST_FILE = DataModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.DataModule;
+				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.data;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -374,6 +492,7 @@
 		240B6B24217C3C4A00A578EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DataModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +506,7 @@
 		240B6B25217C3C4A00A578EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DataModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

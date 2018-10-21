@@ -1,1 +1,2 @@
 github "softwaresaiyajin/navigator-ios" ~> 1.0.0
+github "RxSwiftCommunity/RxAlamofire" ~> 4.2

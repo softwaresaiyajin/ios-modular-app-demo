@@ -18,6 +18,7 @@
 		24168BB4217C419A001A83B1 /* Navigator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BB0217C4127001A83B1 /* Navigator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24168BBC217C429C001A83B1 /* DataModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BBB217C4294001A83B1 /* DataModule.framework */; };
 		24168BBD217C429C001A83B1 /* DataModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24168BBB217C4294001A83B1 /* DataModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24168BCE217C5125001A83B1 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24168BCD217C5125001A83B1 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		240B6AF6217C388000A578EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24168BB0217C4127001A83B1 /* Navigator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Navigator.framework; path = Carthage/Build/iOS/Navigator.framework; sourceTree = "<group>"; };
 		24168BBB217C4294001A83B1 /* DataModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DataModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24168BCD217C5125001A83B1 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,8 @@
 		240B6AD3217C388000A578EF /* ModularApp */ = {
 			isa = PBXGroup;
 			children = (
-				24168BBE217C42CE001A83B1 /* Template */,
+				24168BCB217C5108001A83B1 /* Resource */,
+				24168BCA217C5102001A83B1 /* Source */,
 				240B6AD8217C388000A578EF /* Main.storyboard */,
 				240B6ADB217C388000A578EF /* Assets.xcassets */,
 				240B6ADD217C388000A578EF /* LaunchScreen.storyboard */,
@@ -180,6 +183,30 @@
 				240B6AD6217C388000A578EF /* ViewController.swift */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		24168BCA217C5102001A83B1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				24168BCC217C5119001A83B1 /* Controller */,
+				24168BBE217C42CE001A83B1 /* Template */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		24168BCB217C5108001A83B1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		24168BCC217C5119001A83B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24168BCD217C5125001A83B1 /* MainController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				240B6AD7217C388000A578EF /* ViewController.swift in Sources */,
+				24168BCE217C5125001A83B1 /* MainController.swift in Sources */,
 				240B6AD5217C388000A578EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,8 +536,9 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ModularApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.ModularApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -526,8 +555,9 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ModularApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.ModularApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ph.com.softwaresaiyajin.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
