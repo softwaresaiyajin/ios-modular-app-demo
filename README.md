@@ -17,7 +17,7 @@ Having discussed how this can help your development, there are also disadvantage
 # Architecture
 There are many ways to write a modular applications. Some of those are Uber's [RIBs](https://github.com/uber/RIBs), [VIPER](https://www.objc.io/issues/13-architecture/viper/) and [MVC+RS](https://medium.com/swift-programming/mvc-rs-8780e73e9ff4). This example uses the latter but a modified version MVVM+RS since the application is built on top of [RxSwift](https://github.com/ReactiveX/RxSwift). Below is an overview of the architecture:
 
-![alt text](https://github.com/softwaresaiyajin/modular-app-demo-ios/blob/feature/core/readme_res/Screen%20Shot%202018-10-23%20at%202.31.43%20PM.png)
+![alt text](https://github.com/softwaresaiyajin/modular-app-demo-ios/blob/develop/readme_res/Screen%20Shot%202018-10-23%20at%202.31.43%20PM.png)
 
 The application is built using Swift so it takes advantage of the flexibility of [Protocol-oriented programming](https://www.raywenderlich.com/814-introducing-protocol-oriented-programming-in-swift-3). But the architecture can still be achieved in an object-oriented language using [Adapter Pattern](https://stackify.com/design-patterns-explained-adapter-pattern-with-code-examples/).
 
