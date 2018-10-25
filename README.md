@@ -1,17 +1,17 @@
 
 # Modularisation
-Modularisation is process of breaking down the application into smaller maintainable and reliable micro-services. Modularised architecture categorises use-cases of the application in to feature modules, thus, clearly defining the responsibility of each module inside a dynamic framework.
+Modularisation is process of breaking down the application into smaller maintainable and reliable micro-services. Modularised architecture categorises use-cases of the application into feature modules, thus, clearly defining the responsibility of each module inside a dynamic framework.
 
 Below are some of the most useful features of modularised app:
  - [Build Parallelisation](https://shashikantjagtap.net/wwdc18-modern-tips-for-optimising-swift-build-time-in-xcode-10/) - If  you look at your dependency graph and you don't see complex nested dependencies, you can actually take advantage of your multi-core processors to speed up build time.
  - Code Reusability - Features/ UI components developed can be extracted and versioned for reuse in other applications.
- - Encapsulated Scope - Major issue in huge application is the maintainability and further scalability. When a bug comes up, most of the times developers have to go through a number of classes and deep inheritance hell to find the issue. Clearly defining the scope of a feature eliminates this and prevents the issue from affecting other features.
+ - Encapsulated Scope - Major issue in huge application is the maintainability and further scalability. When a bug comes up, most of the time, developers have to go through a number of classes and deep inheritance hell to find the issue. Clearly defining the scope of a feature eliminates this and prevents the issue from affecting other features.
 - Easier Testing - Scope is defined thus making testing is also bounded task.
 - Team Collaboration - Unlike in a typical huge application where developers' working copies often conflict with one another, here,  developers can work in parallel on separate features without that worry since the scope is encapsulated.
 
 Having discussed how this can help your development, there are also disadvantages developers should look into:
- - When dependency graph becomes a long list, checking out code becomes too tedious regardless which dependency manager you're using.
- - Huge binary size - Compared to a monolith app, the either the archive or iPa is comparably huge. One of major factors affecting the adoption rate of application version is its size. In iOS applications the 3G download, as of writing, is currently limited to 150MB. This shouldn't be a problem considering Apple continues to make improvements in their appstore.
+ - When dependency graph becomes a long list, checking out code becomes too time-consuming regardless which dependency manager you're using.
+ - Huge binary size - Compared to a monolith app, either the archive or iPa is comparably huge. One of major factors affecting the adoption rate of application version is its size. In iOS applications, the 3G download, as of writing, is currently limited to 150MB. (This shouldn't be a problem considering Apple continues to make improvements in their appstore.)
  - Syncing Build Configuration -  By default, iOS applications has two build configurations -- Debug and Release. Most developers prefer to add another one, Adhoc, for their adhoc deployments. This extra build configuration should also exist in your subprojects to successfully do an archive, otherwise, you have to do extra work and modify the framework mapping of your application layer.
 
 # Architecture
@@ -21,11 +21,11 @@ There are many ways to write a modular applications. Some of those are Uber's [R
 
 The application is built using Swift so it takes advantage of the flexibility of [Protocol-oriented programming](https://www.raywenderlich.com/814-introducing-protocol-oriented-programming-in-swift-3). But the architecture can still be achieved in an object-oriented language using [Adapter Pattern](https://stackify.com/design-patterns-explained-adapter-pattern-with-code-examples/).
 
-As illustrated in the diagram, the application is divided into three components:
+As illustrated in the diagram, the application is divided into three layers:
 
  - Feature layer - This contains the use-cases the application. In this example, each screen is considered a feature. Each feature has a repository abstraction which they use to access whatever they need outside their scope (e.g, concrete data, styles, configurations, routing service, etc.). Each feature is developed to be stand-alone so they have their own demo applications making them independent on other external dependencies such as the rate the backend service is being developed.
- - Router Layer - This uses [Navigator](https://github.com/softwaresaiyajin/navigator-ios) framework. Feature modules are decoupled from one another, thus, no references from one another. So when it comes to navigating to another screen, an entity should handle the registration of each screens to know which controller to present. Feature modules communicates to this layer through abstraction as well.
- - Data Layer - Uses [RxAlamofire](https://github.com/RxSwiftCommunity/RxAlamofire) as it's HttpClient and may be integrated further with any ORM such as [Realm](https://github.com/realm/realm-cocoa). This handles the network requests, mapping of endpoints to their corresponding concrete data models and application persistency.
+ - Router Layer - This uses [Navigator](https://github.com/softwaresaiyajin/navigator-ios) framework. Feature modules are decoupled from one another, thus, no references from one another. So when it comes to navigating to another screen, an entity should handle the registration of each screen to know which controller to present. Feature modules communicates to this layer through abstraction as well.
+ - Storage Layer - Uses [RxAlamofire](https://github.com/RxSwiftCommunity/RxAlamofire) as it's HttpClient and may be integrated further with any ORM such as [Realm](https://github.com/realm/realm-cocoa). This handles the network requests, mapping of endpoints to their corresponding concrete data models and application persistency.
 
 # When to modularise?
 Modularisation is not for every project. This is incredibly useful for projects which have mid to high complexities and are expected to scale but will be considered a waste of time for small projects.
@@ -44,7 +44,7 @@ Between the two dependency managers. I prefer Carthage because binary frameworks
 - [Swift Style Guide](https://github.com/raywenderlich/swift-style-guide) - A team can be composed of developers whose skills vary from one another, but still, they should all be able to read one another's code and point out the lines of codes that don't follow the team's engineering standards. This can be achieved using a standardised coding style.
 
 # CI/CD
-With lots of features being developed and requested for merge to your base branch, it's a necessity to check the build integrity and to automate and deployment process. Prerequisites of CI tool is the source code should have written tests in it otherwise, the tool is not fully utilised. I prefer a cloud-based solution compared to a build a machine because I can schedule or deploy right away a build anywhere. 
+With lots of features being developed and requested for merge to your base branch, it's a necessity to check the build integrity and to automate deployment process. Prerequisites of CI tool is the source code should have written tests in it otherwise, the tool is not fully utilised. I prefer a cloud-based solution compared to a build a machine because I can schedule or deploy right away a build anywhere. 
 Below is a cheaper, open-source CI/CD tool:
 
  - [Bitrise](https://www.bitrise.io) - Bitrise scans and configures your project for any mobile platform, be it native or hybrid, so you can start shipping your app immediately
